@@ -1,5 +1,5 @@
-var yellow
-
+var x = 255
+var y = 56
 
 function setup () {
     createCanvas (800,600);
@@ -7,14 +7,25 @@ function setup () {
 }
 
 function draw () {
+    // Green House
+    fill(94,191,102);
+    stroke(0,0,0);
     rect(350,250,350,349);
-    fill(255,56,56);
+
+    // Red Door
+    fill(x,y,y);
+    stroke(0,0,0);
     rect(470,400,110,199);
-    fill(66,66,255);
+
+    // Blue Roof
+    fill(66,66,x);
+    stroke(0,0,0);
     triangle(525, 60, 750, 250, 300, 250);
-    fill(255,255,51);
+
+    // Yellow Sun
+    fill(x,x,51);
+    stroke(x,x,51);
     circle(70,70,50);
-    stroke(255,255,51);
 
     line(70,120,75,160);
     line(90,115,115,150);
@@ -30,8 +41,7 @@ function draw () {
     line(20,80,0,85);
     line(30,100,0,120);
     line(45,115,25,150);
-    stroke(0,0,0);
-
+    
 }
 
 
