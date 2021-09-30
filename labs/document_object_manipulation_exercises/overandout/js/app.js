@@ -1,3 +1,4 @@
+
 //create new element
 let newEl = document.createElement("div");
 
@@ -9,12 +10,11 @@ newEl.style.width = "100px";
 
 
 newEl.onmouseover = function () {
-  //should i have div or newEl in the parentheses? 
-  document.getElementById("div").style.color = "#000000";
+  newEl.style.backgroundColor = "#000000";
 }
 
 newEl.onmouseout = function () {
-  document.getElementById("div").style.color = "#0000FF";
+  newEl.style.backgroundColor = "#0000FF";
 }
 
 
