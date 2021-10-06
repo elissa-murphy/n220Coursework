@@ -11,7 +11,7 @@ function draw() {
     for (var i = 0; i < 25; i++) {
         var x = i * 50; 
         
-         // Draw blue square if divisble by 3 AND 5
+         // Draw blue square if divisble by 3 and 5
         if (i % 3 == 0 && i % 5 == 0) {
             fill(0, 0, 255);
             square(x, y, 50);
