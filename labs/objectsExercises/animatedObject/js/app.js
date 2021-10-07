@@ -1,7 +1,7 @@
 let myObject = {
     x: 300,
     y: 300,
-    circleSize: 500,   
+    circleSize: 50,   
 }
 
 function setup(){
@@ -10,27 +10,11 @@ function setup(){
 
 
 function draw() {
-    
+
+
     background(0,0,0);
     fill("#FF0000");  
-    circle(x,y,circleSize);
+    circle(myObject.x,myObject.y,myObject.circleSize);
+    myObject.x++;
 
 }
-
-
-/*
-
-class Object {
-   x = 50;
-   y = 50;
-   circleSize = 50;
-}
-
-let o = new Object();
-function setup () {
-    createCanvas (600,600);
-}
-
-function draw () {
-}
-*/
