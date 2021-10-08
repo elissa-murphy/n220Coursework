@@ -1,5 +1,3 @@
-//how can i easily display all of the stats on the screen?
-//how do i get the properties to update every time the button is clicked? 
 
 //create virtual pet by creating an object and listing it's properties
 let myPet = {
@@ -12,7 +10,7 @@ let myPet = {
 
 
 
- //Display the stats on the screen
+ //Display the stats on the screen by creating new element
  let newEl = document.createElement("newDiv");
  newEl.innerHTML = "Energy = "+ myPet.energy;
  newEl.style.margin = "3px";
@@ -31,7 +29,7 @@ function feedMax(){
 
 
 
- //Display the stats on the screen
+ //Display the stats on the screen by creating new element
 let secondEl = document.createElement("newDiv");
 secondEl.innerHTML = "Happiness = " + myPet.happiness;
 secondEl.style.margin = "3px";
