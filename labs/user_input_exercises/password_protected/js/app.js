@@ -1,4 +1,5 @@
 //Create an application with two input fields and one button.
+//access input, button, and div
 let usernameTxt = document.getElementById("usernameTxt");
 let passwordTxt = document.getElementById("passwordTxt");
 let dvResult = document.getElementById("dvResult");
@@ -7,6 +8,7 @@ let dvResult = document.getElementById("dvResult");
 //For this assignment: use only one if statement to to the check.
 //First field should be  "Username"
 //Second field should be  "Password"
+//use one if statement 
 
 function doThing() {
     if ((usernameTxt.value == "Username") && (passwordTxt.value == "Password")) {
