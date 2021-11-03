@@ -4,16 +4,19 @@ let dvTwo = document.getElementById("dvTwo");
 let dvThree = document.getElementById("dvThree");
 
 //Styled to be square and red 
+//div one
 dvOne.style.width = "50px";
 dvOne.style.height = "50px";
 dvOne.style.backgroundColor = "#FF0000";
 dvOne.style.margin = "5px";
 
+//div two
 dvTwo.style.width = "50px";
 dvTwo.style.height = "50px";
 dvTwo.style.backgroundColor = "#FF0000";
 dvTwo.style.margin = "5px";
 
+//div three
 dvThree.style.width = "50px";
 dvThree.style.height = "50px";
 dvThree.style.backgroundColor = "#FF0000";

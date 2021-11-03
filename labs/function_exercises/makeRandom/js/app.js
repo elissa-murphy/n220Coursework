@@ -1,3 +1,4 @@
+//access to div
 let dvResult = document.getElementById("dvResult");
 
 //button function, when clicked second function runs 

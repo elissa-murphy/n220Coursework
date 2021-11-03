@@ -22,5 +22,7 @@ function doThing() {
         } else {
             dvResult.innerHTML = "False";
         }
+    //clears input field after button is clicked
+    txtInt.value = "";
     }
 }
