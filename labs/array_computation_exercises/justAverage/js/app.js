@@ -1,3 +1,5 @@
+//Get access to input and divs
+//declare variables
 var textInt = document.getElementById("textInt");
 var sumInt = document.getElementById("sumInt");
 var avgInt = document.getElementById("avgInt");
@@ -21,7 +23,7 @@ function breakString() {
     //Calculates the average of the array
     avg = sum/array.length;
 
-    //Displays to the user
+    //Displays to the user (use div)
     //The average
     //The sum
     sumInt.innerHTML= "Sum: " + sum;
