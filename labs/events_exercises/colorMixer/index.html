@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Mixer</title>
+</head>
+<body>
+    
+    <div id="divOne"></div>
+    <div id="divTwo">Current color:</div>
+    <table>
+        <tr>
+            <td>Red:</td>
+            <td><button id="button1" data-value= "1" >+1</button></td>
+            <td><button  data-value= "" >+5</button></td>
+            <td><button  data-value= "" >+10</button></td>
+        </tr>
+        <tr>
+            <td>Green:</td>
+            <td><button onclick="green1()">+1</button></td>
+            <td><button onclick="green5()">+5</button></td>
+            <td><button onclick="green10()">+10</button></td>
+        </tr>
+        <tr>
+            <td>Blue:</td>
+            <td><button onclick="blue1()">+1</button></td>
+            <td><button onclick="blue5()">+5</button></td>
+            <td><button onclick="blue10()">+10</button></td>
+        </tr>
+    </table>
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
