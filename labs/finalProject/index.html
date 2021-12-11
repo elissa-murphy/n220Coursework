@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concentration Game</title>
+    <style> 
+        .row {
+            text-align: center;
+        }
+
+        .card {
+            display:inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #eee;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            box-shadow: inset 0px 0px 0px 2px;
+            box-sizing: border-box;
+        }
+
+        .card.done {
+            cursor: default;
+        }
+
+        .card.done:hover {
+            cursor: default;
+            box-shadow: none;
+        }
+
+        .red {
+            background-Color: red;
+        }
+
+        .orange {
+            background-Color: orange;
+        }
+
+        .yellow {
+            background-Color: yellow;
+        }
+
+        .green {
+            background-Color: green;
+        }
+
+        .blue {
+            background-Color: blue;
+        }
+
+        .purple {
+            background-Color: purple;
+        }
+
+        .pink {
+            background-Color: pink;
+        }
+
+        .brown {
+            background-Color: brown;
+        }
+
+        .color-hidden {
+            background-Color: #eee;
+        }
+
+
+        #title {
+            text-align: center;
+            margin: 5px;
+            font-size: 25px;
+        }
+
+        #instructions {
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 15px;
+        }
+
+        #pairsFound {
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 15px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id= "title"> Concentration Game </div>
+    <div id= "instructions"> Instructions: Find matching color pairs! </div>
+    <div id="pairsFound"></div>
+    <button onclick="reset()">Reset Game</button>
+    <div class= "row">
+        <div
+        data-color="red"
+        class="card red color-hidden"
+        onclick="cardClicked(event)">
+        </div>
+
+        <div 
+        data-color="yellow"
+        class="card yellow color-hidden"
+        onclick="cardClicked(event)">
+        </div>
+
+        <div 
+        data-color="purple"
+        class="card purple color-hidden"
+        onclick="cardClicked(event)">
+        </div>
+
+        <div 
+        data-color="green"
+        class="card green color-hidden"
+        onclick="cardClicked(event)">
+        </div>
+    </div>
+
+    <div class= "row">
+        <div 
+        data-color="pink"
+        class="card pink color-hidden"
+        onclick="cardClicked(event)">
+        </div>
+
+        <div 
+        data-color="red"
+        class="card red color-hidden"
+        onclick="cardClicked(event)">
+        </div>
+
+        <div 
+        data-color="purple"
+        class="card purple color-hidden"
+        onclick="cardClicked(event)">
+        </div>
+
+        <div 
+        data-color="brown"
+        class="card brown color-hidden"
+        onclick="cardClicked(event)">
+        </div>
+    </div>
+
+    <div class= "row">
+        <div 
+        data-color="yellow"
+        class="card yellow color-hidden"
+        onclick="cardClicked(event)">
+        </div>
+
+        <div 
+        data-color="blue"
+        class="card blue color-hidden"
+        onclick="cardClicked(event)">
+        </div>
+
+        <div 
+        data-color="orange"
+        class="card orange color-hidden"
+        onclick="cardClicked(event)">
+        </div>
+
+        <div 
+        data-color="brown"
+        class="card brown color-hidden"
+        onclick="cardClicked(event)">
+        </div>
+    </div>
+
+    <div class= "row">
+        <div 
+        data-color="pink"
+        class="card pink color-hidden"
+        onclick="cardClicked(event)">
+        </div>
+
+        <div 
+        data-color="orange"
+        class="card orange color-hidden"
+        onclick="cardClicked(event)">
+        </div>
+
+        <div 
+        data-color="green"
+        class="card green color-hidden"
+        onclick="cardClicked(event)">
+        </div>
+
+        <div 
+        data-color="blue"
+        class="card blue color-hidden"
+        onclick="cardClicked(event)">
+        </div>
+    </div>
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
